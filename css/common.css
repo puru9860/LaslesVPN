@@ -1,0 +1,27 @@
+.btn-primary {
+  background-color: #F53838;
+  color: #FFFFFF;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 15px 20px;
+  border: none;
+}
+
+.btn-secondary {
+  border: 1px solid #F53855;
+  box-sizing: border-box;
+  border-radius: 50px;
+  color: #F53855;
+  padding: 10px 40px;
+  font-weight: 500;
+}
+
+.background-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sm-text {
+  font-size: 14px;
+  color: #4F5665;
+}
