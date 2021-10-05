@@ -3,12 +3,11 @@ body {
   font-family: 'Rubik', sans-serif;
   font-size: 16px;
   line-height: 30px;
-  height: 10000px;
 }
 
 .hero-section {
   display: flex;
-  height: 70vh;
+  height: 60vh;
   margin-bottom: 100px;
 }
 
@@ -33,6 +32,7 @@ body {
 .hero-body {
   font-size: 16px;
   margin-bottom: 25px;
+  padding-right: 30px;
 }
 
 .hero-section button {
@@ -140,43 +140,33 @@ body {
 }
 
 .bottom-content {
-  background-color: #F6F6F6;
-  height: 500px;
+  background-image: linear-gradient(#FAFAFA, #FFFFFF);
+  margin: 0 -50px;
+  padding: 0 50px 200px 50px;
 }
 
-.plan {
+.pricing {
   padding-top: 80px;
+  margin-bottom: 100px;
 }
 
-.plan-illustration {
+.pricing-illustration {
   margin-bottom: 30px;
 }
 
-.plan-heading {
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 50px;
-  width: fit-content;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.plan-heading-body {
-  text-align: center;
-  color: #4F5665;
+.pricing-heading-body {
   width: 555px;
-  margin: 0 auto;
   margin-bottom: 50px;
 }
 
-.plan-items-container {
+.pricing-items-container {
   padding: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.plan-item {
+.pricing-item {
   background: #FFFFFF;
   border: 2px solid #DDDDDD;
   box-sizing: border-box;
@@ -186,20 +176,21 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 80px;
+  padding-bottom: 50px;
 }
 
-.plan-title {
+.pricing-title {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 30px;
 }
 
-.plan-feature {
+.pricing-feature {
   display: flex;
   align-items: center;
 }
 
-.plan-feature-icon {
+.pricing-feature-icon {
   background-image: url(../assets/check.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -207,4 +198,180 @@ body {
   width: 20px;
   padding: 2px;
   margin-right: 20px;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+}
+
+.pricing-item-price {
+  /* font-weight: 500; */
+  font-size: 25px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.map {
+  padding-bottom: 30px;
+  margin-bottom: 5px;
+}
+
+.map-heading {
+  margin: 0 auto;
+  width: 380px;
+  margin-bottom: 20px;
+}
+
+.globe .sub-heading {
+  margin-bottom: 155px;
+}
+
+.map-illustration {
+  background-image: url(../assets/Huge\ Global.svg);
+  width: 1060px;
+  height: 537.77px;
+  margin: 0 auto;
+}
+
+.sponsors {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.testimonials-container .heading {
+  width: 450px;
+  margin: 0 auto;
+}
+
+.testimonials-container .sub-heading {
+  margin-bottom: 60px;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  margin-right: -50px;
+}
+
+.testimony {
+  width: 400px;
+  height: 260px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border: 2px solid #DDDDDD;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.testimony .header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.testimony .rating {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.slider {
+  display: flex;
+}
+
+.slider-index {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.slider-index img {
+  padding-right: 15px;
+}
+
+.slider-navigation {
+  margin-left: auto;
+}
+
+.slider-button {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid #F53838;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.slider-navigation img {
+  width: 20px;
+  height: 17.5px;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 40px 40px;
+  margin: 0 auto;
+  margin-top: 80px;
+  z-index: 1;
+  position: absolute;
+  box-sizing: border-box;
+  width: 90%;
+  box-shadow: 0 15px 80px -50px #000;
+}
+
+.subscribe .sub-heading, .subscribe .heading {
+  text-align: left;
+  margin: 0;
+}
+
+.subscribe .heading {
+  width: 370px;
+  margin-bottom: 20px;
+}
+
+.subscribe button {
+  width: 250px;
+  height: 60px;
+}
+
+.footer {
+  background-color: #F8F8F8;
+  margin: 0 -50px;
+  padding: 180px 50px 20px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media img {
+  color: #F53838;
+  /* height: 33px;
+  width: 33px; */
+}
+
+.about .logo {
+  margin-bottom: 20px;
+}
+
+.about .sub-heading {
+  margin: 0;
+  text-align: left;
+  margin-bottom: 30px;
+  width: 340px;
 }

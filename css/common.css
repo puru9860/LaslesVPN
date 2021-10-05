@@ -21,7 +21,43 @@
   background-size: cover;
 }
 
+.heading {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  width: fit-content;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sub-heading {
+  text-align: center;
+  color: #4F5665;
+  margin: 0 auto;
+  width: 555px;
+}
+
 .sm-text {
   font-size: 14px;
   color: #4F5665;
+}
+
+.md-text {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.rating-icon {
+  width: 14px;
+  height: 14px;
+  background-image: url(../assets/star.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.avatar {
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
 }
