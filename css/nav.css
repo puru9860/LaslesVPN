@@ -2,8 +2,8 @@ nav {
   display: flex;
   justify-content: space-between;
   margin-left: 0;
-  margin-bottom: 5.805rem;
   align-items: center;
+  padding: 3.125rem 0 5.805rem 0;
 }
 
 .logo {

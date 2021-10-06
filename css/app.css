@@ -1,5 +1,5 @@
 body {
-  padding: 3.125rem 5rem;
+  padding: 0 5rem;
   font-family: 'Rubik', sans-serif;
   line-height: 1.875rem;
 }
@@ -154,6 +154,10 @@ body {
 
 .pricing-illustration {
   margin-bottom: 30px;
+}
+
+.pricing .heading {
+  margin: 0 auto;
 }
 
 .pricing-heading-body {
