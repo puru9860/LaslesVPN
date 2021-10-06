@@ -1,8 +1,7 @@
 body {
-  margin: 10px 50px;
+  margin: 3.125rem 5rem;
   font-family: 'Rubik', sans-serif;
-  font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875rem;
 }
 
 .hero-section {
@@ -13,7 +12,7 @@ body {
 
 .hero-content {
   width: 50%;
-  padding: 10px 0;
+  padding: 1.728rem 0;
   position: relative;
 }
 
