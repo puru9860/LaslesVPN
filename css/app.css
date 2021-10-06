@@ -1,5 +1,5 @@
 body {
-  margin: 3.125rem 5rem;
+  padding: 3.125rem 5rem;
   font-family: 'Rubik', sans-serif;
   line-height: 1.875rem;
 }
@@ -13,12 +13,15 @@ body {
 .hero-content {
   width: 50%;
   padding: 1.728rem 0;
+  padding-right: 2.547rem;
   position: relative;
 }
 
 .hero-image {
   width: 50%;
   background-image: url(../assets/hero-section.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -36,7 +39,6 @@ body {
 
 .hero-section button {
   width: 250px;
-  box-shadow: 0 15px 20px -2px #F5383859;
   position: absolute;
   bottom: 0;
 }
@@ -45,6 +47,7 @@ body {
   display: flex;
   justify-content: space-between;
   box-shadow: 0 15px 50px -40px #0D1025;
+  padding: 2.343rem 0;
   margin-bottom: 50px;
 }
 
@@ -86,7 +89,6 @@ body {
 }
 
 .stats-item-count {
-  margin-bottom: 10px;
   font-weight: 700;
 }
 
@@ -133,15 +135,16 @@ body {
   width: 20px;
   padding: 2px;
   margin-right: 12px;
-  background-image: url(../assets/right.png);
+  background-image: url(../assets/check-green.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .bottom-content {
   background-image: linear-gradient(#FAFAFA, #FFFFFF);
-  margin: 0 -50px;
+  margin: 0 -5rem;
   padding: 0 50px 200px 50px;
+  position: relative;
 }
 
 .pricing {
@@ -178,6 +181,10 @@ body {
   padding-bottom: 50px;
 }
 
+.pricing-item:hover {
+  border: 2px solid #F53838
+}
+
 .pricing-title {
   font-size: 18px;
   font-weight: 500;
@@ -207,10 +214,15 @@ body {
 }
 
 .pricing-item-price {
-  /* font-weight: 500; */
+  color: #4F5665;
   font-size: 25px;
   margin-top: 50px;
   margin-bottom: 20px;
+}
+
+.price {
+  color: #0B132A;
+  font-weight: 500;
 }
 
 .map {
@@ -244,6 +256,7 @@ body {
 .testimonials-container .heading {
   width: 450px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .testimonials-container .sub-heading {
@@ -267,6 +280,10 @@ body {
   border: 2px solid #DDDDDD;
   box-sizing: border-box;
   border-radius: 10px;
+}
+
+.testimony:hover {
+  border: 2px solid #F53838;
 }
 
 .testimony .header {
@@ -299,23 +316,32 @@ body {
 
 .slider-navigation {
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .slider-button {
   height: 60px;
   width: 60px;
-  border-radius: 50%;
-  border: 2px solid #F53838;
-  box-sizing: border-box;
-  padding: 0;
+  margin-right: 1.25rem;
+  cursor: pointer;
 }
 
-.slider-navigation img {
-  width: 20px;
-  height: 17.5px;
+.left-arrow img {
+  height: 60px;
+  width: 60px;
+}
+
+.right-arrow {
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .subscribe {
+  width: 92%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -323,11 +349,10 @@ body {
   padding: 40px 40px;
   margin: 0 auto;
   margin-top: 80px;
+  box-sizing: border-box;
+  box-shadow: 0 15px 80px -50px #000;
   z-index: 1;
   position: absolute;
-  box-sizing: border-box;
-  width: 90%;
-  box-shadow: 0 15px 80px -50px #000;
 }
 
 .subscribe .sub-heading, .subscribe .heading {
@@ -347,7 +372,7 @@ body {
 
 .footer {
   background-color: #F8F8F8;
-  margin: 0 -50px;
+  margin: 0 -5rem;
   padding: 180px 50px 20px 50px;
   display: flex;
   justify-content: space-between;

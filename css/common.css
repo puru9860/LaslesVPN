@@ -4,16 +4,30 @@
   font-weight: 700;
   border-radius: 10px;
   padding: 15px 20px;
+  box-shadow: 0 15px 50px -10px #F53838;
   border: none;
+}
+
+.btn-primary:hover {
+  color: #FFFFFF;
+  background-color: #0B132A;
+  cursor: pointer;
+  box-shadow: 0 15px 50px -10px #0d1325;
 }
 
 .btn-secondary {
   border: 1px solid #F53855;
   box-sizing: border-box;
   border-radius: 50px;
-  color: #F53855;
+  color: #F53838;
   padding: 10px 40px;
-  font-weight: 500;
+  font-weight: 700;
+}
+
+.btn-secondary:hover {
+  color: #FFFFFF;
+  background-color: #F53838;
+  cursor: pointer;
 }
 
 .background-image {
@@ -45,6 +59,7 @@
 .md-text {
   font-weight: 500;
   font-size: 18px;
+  color: #0B132A;
 }
 
 .rating-icon {
@@ -60,4 +75,9 @@
   height: 50px;
   width: 50px;
   margin-right: 20px;
+}
+
+.link:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
