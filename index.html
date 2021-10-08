@@ -11,277 +11,323 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/reset.css" />
+    >
+
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/app.css" />
     <title>LaslesVPN</title>
   </head>
   <body>
-    <!-- nav -->
-    <nav>
-      <span class="logo">
+    <!-- Header start -->
+    <nav class="container nav">
+      <a href="index.html" class="logo">
         <img src="assets/Logo.png" alt="LaslesVPNs" />
-      </span>
-      <ul class="nav-items">
-        <li class="nav-item"><a href="#" class="menu">About </a></li>
-        <li class="nav-item"><a href="#" class="menu">Features </a></li>
-        <li class="nav-item"><a href="#" class="menu">Pricing </a></li>
-        <li class="nav-item"><a href="#" class="menu">Testimonials </a></li>
-        <li class="nav-item"><a href="#" class="menu">Help </a></li>
+      </a>
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="#about" class="text--secondary">About </a>
+        </li>
+        <li class="menu__item">
+          <a href="#features" class="text--secondary">Features </a>
+        </li>
+        <li class="menu__item">
+          <a href="#pricing" class="text--secondary">Pricing </a>
+        </li>
+        <li class="menu__item">
+          <a href="#testimonials" class="text--secondary">Testimonials </a>
+        </li>
+        <li class="menu__item">
+          <a href="#help" class="text--secondary">Help </a>
+        </li>
       </ul>
-      <ul class="nav-items">
-        <li class="md-text nav-item">Sign In</li>
-        <li class="nav-item"><a href="#" class="btn-secondary">Sign Up</a></li>
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="#" class="text--semi-bold">Sign In</a>
+        </li>
+        <li class=""><a href="#" class="btn btn--secondary">Sign Up</a></li>
       </ul>
+      <div class="hamburger-menu">
+        <img src="assets/menu.png" alt="hamburger menu" />
+      </div>
     </nav>
-    <!-- nav end -->
+    <!-- Header end -->
 
-    <!-- hero section -->
-    <div class="hero-section">
-      <div class="hero-content">
-        <p class="hero-title">
-          Want anything to be easy with <strong>LaslesVPN</strong>.
+    <!-- Hero section -->
+    <div id="about" class="container hero__container">
+      <div class="hero__content">
+        <p class="text--primary text--semi-bold hero__title">
+          Want anything to be easy with
+          <span class="text--bold">LaslesVPN</span>.
         </p>
-        <p class="hero-body">
+        <p class="hero__body text--secondary">
           Provide a network for all your needs with ease and fun using
-          <strong>LaslesVPN</strong>
+          <span class="text--semi-bold">LaslesVPN</span>
           discover interesting features from us.
         </p>
-        <button class="btn-primary">Get Started</button>
+        <button class="hero__button btn btn--primary">
+          <span class="text--bold">Get Started</span>
+        </button>
       </div>
-      <div class="hero-image background-image"></div>
+      <div class="background-image hero__image"></div>
     </div>
-    <!-- hero section end -->
+    <!-- Hero section end -->
 
-    <!-- stats -->
-    <div>
-      <ul class="stats">
-        <li>
-          <div class="stats-item">
-            <div class="icons">
-              <img src="assets/user.png" alt="user" />
-            </div>
-            <div class="stats-item-body">
-              <p class="stats-item-count">90+</p>
-              <p class="stats-item-text">Users</p>
-            </div>
+    <!-- Stats -->
+    <div class="container">
+      <ul class="stats__container">
+        <li class="stats__item">
+          <div class="stats__icon">
+            <img src="assets/user.png" alt="User icon" />
+          </div>
+          <div class="stats__body">
+            <p class="text--bold text--semi-lg">90+</p>
+            <p class="text--md">Users</p>
           </div>
         </li>
-        <li>
-          <div class="stats-item">
-            <div class="icons">
-              <img src="assets/location.png" alt="location" />
-            </div>
-            <div class="stats-item-body">
-              <p class="stats-item-count">30+</p>
-              <p class="stats-item-text">Locations</p>
-            </div>
+        <li class="stats__item">
+          <div class="stats__icon">
+            <img src="assets/location.png" alt="Location icon" />
+          </div>
+          <div class="stats__body">
+            <p class="text--bold text--semi-lg">30+</p>
+            <p class="text--md">Locations</p>
           </div>
         </li>
-        <li>
-          <div class="stats-item">
-            <div class="icons"><img src="assets/server.png" alt=" " /></div>
-            <div class="stats-item-body">
-              <p class="stats-item-count">50+</p>
-              <p class="stats-item-text">Servers</p>
-            </div>
+        <li class="stats__item">
+          <div class="stats__icon">
+            <img src="assets/server.png" alt="Server icon" />
+          </div>
+          <div class="stats__body">
+            <p class="text--bold text--semi-lg">50+</p>
+            <p class="text--md">Servers</p>
           </div>
         </li>
       </ul>
     </div>
-    <!-- stats end -->
+    <!-- Stats end -->
 
-    <!-- features -->
-    <div class="features">
-      <div class="background-image features-image"></div>
-      <div class="features-content">
-        <div class="features-header">We Provide Many Features You Can Use</div>
-        <div class="features-body">
+    <!-- Features -->
+    <div class="container features" id="features">
+      <div class="background-image features__image"></div>
+      <div class="features__content">
+        <div class="text--lg text--semi-bold features__heading">
+          We Provide Many Features You Can Use
+        </div>
+        <div class="text--secondary features__sub-heading">
           You can explore the features that we provide with fun and have their
           own functions each feature.
         </div>
         <div class="features-list">
-          <div class="feature-list-item">
-            <div class="feature-item-icon"></div>
-            <div class="sm-text">Powerful online protection.</div>
+          <div class="features__item">
+            <div class="features__icon"></div>
+            <div class="text--secondary">Powerful online protection.</div>
           </div>
-          <div class="feature-list-item">
-            <div class="feature-item-icon"></div>
-            <div class="sm-text">Internet without borders.</div>
+          <div class="features__item">
+            <div class="features__icon"></div>
+            <div class="text--secondary">Internet without borders.</div>
           </div>
-          <div class="feature-list-item">
-            <div class="feature-item-icon"></div>
-            <div class="sm-text">Supercharged VPN</div>
+          <div class="features__item">
+            <div class="features__icon"></div>
+            <div class="text--secondary">Supercharged VPN</div>
           </div>
-          <div class="feature-list-item">
-            <div class="feature-item-icon"></div>
-            <div class="sm-text">No specific time limits.</div>
+          <div class="features__item">
+            <div class="features__icon"></div>
+            <div class="text--secondary">No specific time limits.</div>
           </div>
         </div>
       </div>
     </div>
-    <!-- features end -->
+    <!-- Features end -->
 
-    <!-- bottom content -->
-    <div class="bottom-content">
-      <!-- pricing -->
-      <div class="pricing">
-        <div class="heading">Choose Your plan</div>
-        <div class="sub-heading pricing-heading-body">
+    <!-- Mid section start-->
+    <div class="container mid-section">
+      <!-- Pricing start-->
+      <div id="pricing" class="pricing__container">
+        <div
+          class="m--auto-x text--lg text--semi-bold text--center heading--main"
+        >
+          Choose Your plan
+        </div>
+        <div class="text--center text--secondary m--auto-x heading--sub">
           Let's choose the package that is best for you and explore it happily
           and cheerfully.
         </div>
 
-        <div class="pricing-items-container">
-          <div class="pricing-item">
-            <div class="pricing-illustration">
-              <img src="assets/Free.svg" alt="free" />
+        <div class="pricing">
+          <div class="pricing__item">
+            <div class="pricing__illustration">
+              <img src="assets/Free.svg" alt="Free plan" />
             </div>
-            <div class="pricing-title">Free Plan</div>
-            <div class="pricing-item-body">
-              <div class="pricing-feature">
-                <div class="pricing-feature-icon"></div>
-                <div class="sm-text">Unlimited Bandwidth</div>
+            <div class="text--md text--semi-bold pricing__plan-title">
+              Free Plan
+            </div>
+            <div class="">
+              <div class="pricing__features">
+                <div class="pricing__features-icon"></div>
+                <div class="text--secondary">Unlimited Bandwidth</div>
               </div>
-              <div class="pricing-feature">
-                <div class="pricing-feature-icon"></div>
-                <div class="sm-text">Encrypted Connection</div>
+              <div class="pricing__features">
+                <div class="pricing__features-icon"></div>
+                <div class="text--secondary">Encrypted Connection</div>
               </div>
-              <div class="pricing-feature">
-                <div class="pricing-feature-icon"></div>
-                <div class="sm-text">No Traffic Logs</div>
+              <div class="pricing__features">
+                <div class="pricing__features-icon"></div>
+                <div class="text--secondary">No Traffic Logs</div>
               </div>
-              <div class="pricing-feature">
-                <div class="pricing-feature-icon"></div>
-                <div class="sm-text">Works on All Devices</div>
+              <div class="pricing__features">
+                <div class="pricing__features-icon"></div>
+                <div class="text--secondary">Works on All Devices</div>
               </div>
             </div>
+            <div class="pricing__price-container">
+              <div class="pricing__price">
+                <span class="text--semi-bold text--semi-lg text--primary"
+                  >Free</span
+                >
+              </div>
+              <button type="button" class="btn btn--secondary">Select</button>
+            </div>
+          </div>
 
-            <div class="price-container">
-              <div class="pricing-item-price">
-                <span class="price">Free</span>
+          <div class="pricing__item">
+            <div class="pricing__illustration">
+              <img src="assets/Standard.svg" alt="Standard plan" />
+            </div>
+            <div class="text--md text--semi-bold pricing__plan-title">
+              Standard plan
+            </div>
+            <div class="">
+              <div class="pricing__features">
+                <div class="pricing__features-icon"></div>
+                <div class="text--secondary">Unlimited Bandwidth</div>
               </div>
-              <button type="button" class="btn-secondary">Select</button>
+              <div class="pricing__features">
+                <div class="pricing__features-icon"></div>
+                <div class="text--secondary">Encrypted Connection</div>
+              </div>
+              <div class="pricing__features">
+                <div class="pricing__features-icon"></div>
+                <div class="text--secondary">No Traffic Logs</div>
+              </div>
+              <div class="pricing__features">
+                <div class="pricing__features-icon"></div>
+                <div class="text--secondary">Works on All Devices</div>
+              </div>
+              <div class="pricing__features">
+                <div class="pricing__features-icon"></div>
+                <div class="text--secondary">Connect Anywhere</div>
+              </div>
+            </div>
+            <div class="pricing__price-container">
+              <div class="text--semi-lg text--secondary pricing__price">
+                <span class="text--semi-bold text--primary">$9</span>/ mo
+              </div>
+              <button type="button" class="btn btn--secondary">Select</button>
             </div>
           </div>
 
-          <div class="pricing-item">
-            <div class="pricing-illustration">
-              <img src="assets/Standard.svg" alt="Standard" />
+          <div class="pricing__item">
+            <div class="pricing__illustration">
+              <img src="assets/Premium.svg" alt="Premium plan" />
             </div>
-            <div class="pricing-title">Standard plan</div>
-            <div class="pricing-item-body">
-              <div class="pricing-feature">
-                <div class="pricing-feature-icon"></div>
-                <div class="sm-text">Unlimited Bandwidth</div>
-              </div>
-              <div class="pricing-feature">
-                <div class="pricing-feature-icon"></div>
-                <div class="sm-text">Encrypted Connection</div>
-              </div>
-              <div class="pricing-feature">
-                <div class="pricing-feature-icon"></div>
-                <div class="sm-text">No Traffic Logs</div>
-              </div>
-              <div class="pricing-feature">
-                <div class="pricing-feature-icon"></div>
-                <div class="sm-text">Works on All Devices</div>
-              </div>
-              <div class="pricing-feature">
-                <div class="pricing-feature-icon"></div>
-                <div class="sm-text">Connect Anywhere</div>
-              </div>
+            <div class="text--md text--semi-bold pricing__plan-title">
+              Premium plan
             </div>
-
-            <div class="price-container">
-              <div class="pricing-item-price">
-                <span class="price">$9</span>/ mo
+            <div class="">
+              <div class="pricing__features">
+                <div class="pricing__features-icon"></div>
+                <div class="text--secondary">Unlimited Bandwidth</div>
               </div>
-              <button type="button" class="btn-secondary">Select</button>
-            </div>
-          </div>
-          <div class="pricing-item">
-            <div class="pricing-illustration">
-              <img src="assets/Premium.svg" alt="free" />
-            </div>
-            <div class="pricing-title">Premium plan</div>
-            <div class="pricing-item-body">
-              <div class="pricing-feature">
-                <div class="pricing-feature-icon"></div>
-                <div class="sm-text">Unlimited Bandwidth</div>
+              <div class="pricing__features">
+                <div class="pricing__features-icon"></div>
+                <div class="text--secondary">Encrypted Connection</div>
               </div>
-              <div class="pricing-feature">
-                <div class="pricing-feature-icon"></div>
-                <div class="sm-text">Encrypted Connection</div>
+              <div class="pricing__features">
+                <div class="pricing__features-icon"></div>
+                <div class="text--secondary">No Traffic Logs</div>
               </div>
-              <div class="pricing-feature">
-                <div class="pricing-feature-icon"></div>
-                <div class="sm-text">No Traffic Logs</div>
+              <div class="pricing__features">
+                <div class="pricing__features-icon"></div>
+                <div class="text--secondary">Works on All Devices</div>
               </div>
-              <div class="pricing-feature">
-                <div class="pricing-feature-icon"></div>
-                <div class="sm-text">Works on All Devices</div>
+              <div class="pricing__features">
+                <div class="pricing__features-icon"></div>
+                <div class="text--secondary">Connect Anywhere</div>
               </div>
-              <div class="pricing-feature">
-                <div class="pricing-feature-icon"></div>
-                <div class="sm-text">Connect Anywhere</div>
-              </div>
-              <div class="pricing-feature">
-                <div class="pricing-feature-icon"></div>
-                <div class="sm-text">Get New Features</div>
+              <div class="pricing__features">
+                <div class="pricing__features-icon"></div>
+                <div class="text--secondary">Get New Features</div>
               </div>
             </div>
-
-            <div class="price-container">
-              <div class="pricing-item-price">
-                <span class="price">$12 </span>/mo
+            <div class="pricing__price-container">
+              <div class="text--semi-lg text--secondary pricing__price">
+                <span class="text--semi-bold text--primary">$12 </span>/mo
               </div>
-              <button type="button" class="btn-secondary">Select</button>
+              <button type="button" class="btn btn--secondary">Select</button>
             </div>
           </div>
         </div>
       </div>
-      <!-- pricing end -->
+      <!-- Pricing end -->
 
-      <div class="globe">
-        <div class="heading map-heading">Huge Global Network of Fast VPN</div>
-        <div class="sub-heading">
+      <!-- Map start -->
+      <div class="map__container">
+        <div
+          class="m--auto-x text--lg text--semi-bold text--center heading--main"
+        >
+          Huge Global Network of Fast VPN
+        </div>
+        <div class="text--center text--secondary m--auto-x heading--sub">
           See LaslesVPN everywhere to make it easier for you when you move
           locations.
         </div>
-        <div class="background-image map-illustration"></div>
+        <div class="background-image m--auto-x map__illustration"></div>
       </div>
 
-      <!-- sponsors -->
+      <!-- Sponsors start -->
       <div class="sponsors">
-        <div class="sponsor-item"><img src="assets/netflix.svg" alt="" /></div>
-        <div class="sponsor-item"><img src="assets/reddit.svg" alt="" /></div>
-        <div class="sponsor-item"><img src="assets/amazon.png" alt="" /></div>
-        <div class="sponsor-item"><img src="assets/Discord.svg" alt="" /></div>
-        <div class="sponsor-item"><img src="assets/spotify.png" alt="" /></div>
+        <div class="sponsors__item">
+          <img src="assets/netflix-logo.png" alt="Netflix" />
+        </div>
+        <div class="sponsors__item">
+          <img src="assets/reddit-logo.png" alt="Reddit" />
+        </div>
+        <div class="sponsors__item">
+          <img src="assets/amazon-logo.png" alt="Amazon" />
+        </div>
+        <div class="sponsors__item">
+          <img src="assets/discord-logo.png" alt="Discord" />
+        </div>
+        <div class="sponsors__item">
+          <img src="assets/spotify-logo.png" alt="Spotify" />
+        </div>
       </div>
-      <!-- sponsors end -->
+      <!-- Sponsors end -->
 
-      <!-- testimonials -->
-
-      <div class="testimonials-container">
-        <div class="heading">Trusted by Thousands of Happy Customer</div>
-        <div class="sub-heading">
+      <!-- Testimonials -->
+      <div id="testimonials" class="testimonials__container">
+        <div
+          class="m--auto-x text--lg text--center text--semi-bold heading--main"
+        >
+          Trusted by Thousands of Happy Customer
+        </div>
+        <div class="text--center text--secondary m--auto-x heading--sub">
           These are the stories of our customers who have joined us with great
           pleasure when using this crazy feature.
         </div>
 
-        <div class="testimonials">
+        <div class="testimony_container">
           <div class="testimony">
-            <div class="header">
+            <div class="testimony__header">
               <div class="avatar">
                 <img src="assets/testimony-1.svg" alt="" />
               </div>
               <div class="testimony-info">
                 <div class="md-text">Viezh Robert</div>
-                <div class="sm-text">Warsaw, Poland</div>
+                <div class="text--secondary">Warsaw, Poland</div>
               </div>
-              <div class="rating">
+              <div class="testimony__rating">
                 4.5
                 <div class="rating-icon"></div>
               </div>
@@ -294,15 +340,15 @@
           </div>
 
           <div class="testimony">
-            <div class="header">
+            <div class="testimony__header">
               <div class="avatar">
                 <img src="assets/testimony-2.svg" alt="" />
               </div>
               <div class="testimony-info">
                 <div class="md-text">Yessica Christy</div>
-                <div class="sm-text">Shanxi, China</div>
+                <div class="text--secondary">Shanxi, China</div>
               </div>
-              <div class="rating">
+              <div class="testimony__rating">
                 4.5
                 <div class="rating-icon"></div>
               </div>
@@ -314,15 +360,15 @@
           </div>
 
           <div class="testimony">
-            <div class="header">
+            <div class="testimony__header">
               <div class="avatar">
                 <img src="assets/testimony-3.svg" alt="" />
               </div>
               <div class="testimony-info">
                 <div class="md-text">Kim Young Jou</div>
-                <div class="sm-text">Seoul, South Korea</div>
+                <div class="text--secondary">Seoul, South Korea</div>
               </div>
-              <div class="rating">
+              <div class="testimony__rating">
                 4.5
                 <div class="rating-icon"></div>
               </div>
@@ -336,78 +382,94 @@
         </div>
 
         <div class="slider">
-          <div class="slider-index">
+          <div class="slide__index">
             <img src="assets/Union.png" alt="" />
             <img src="assets/Ellipse 173.png" alt="" />
             <img src="assets/Ellipse 173.png" alt="" />
             <img src="assets/Ellipse 173.png" alt="" />
           </div>
-          <div class="slider-navigation">
-            <div class="slider-button left-arrow">
+          <div class="slider__navigation">
+            <div class="slider__button slider__left-arrow">
               <img src="assets/left.png" alt="" />
             </div>
-            <div class="slider-button right-arrow">
+            <div class="slider__button slider__right-arrow">
               <img src="assets/right-arrow.svg" alt="" />
             </div>
           </div>
         </div>
       </div>
 
-      <!-- testimonials end -->
+      <!-- Testimonials end -->
 
       <div class="subscribe">
-        <div class="header">
-          <div class="heading">Subscribe Now for Get Special Features!</div>
-          <div class="sub-heading">
+        <div class="">
+          <div
+            class="
+              text--lg text--center text--semi-bold
+              heading--main
+              subscribe__heading
+            "
+          >
+            Subscribe Now for Special Features!
+          </div>
+          <div
+            class="
+              text--secondary text--center
+              heading--sub
+              subscribe__sub-heading
+            "
+          >
             Let's subscribe with us and find the fun.
           </div>
         </div>
-        <button class="btn-primary">Subscribe Now</button>
+        <button class="btn btn--primary">Subscribe Now</button>
       </div>
     </div>
-    <!-- bottom content end -->
+    <!-- Mid section end -->
 
-    <!-- footer -->
-    <div class="footer">
-      <div class="about">
-        <div class="logo">
+    <!-- Footer -->
+    <div class="container footer">
+      <div class="footer__about m--auto-x">
+        <div class="m--auto-x logo">
           <img src="assets/Logo.png" alt="LaslesVPNs" />
         </div>
-        <div class="sub-heading">
-          <strong>LaslesVPN</strong> is a private virtual network that has
-          unique features and has high security.
+        <div class="text--center text--secondary m--auto-x heading--sub">
+          <span class="text--bold">LaslesVPN</span> is a private virtual network
+          that has unique features and has high security.
         </div>
-        <div class="social-media">
+        <div class="m--auto-x social-media">
           <a href="#"><img src="assets/Facebook.png" alt="Facebook" /></a>
           <a href="#"><img src="assets/Twitter.png" alt="Twitter" /></a>
           <a href="#"><img src="assets/Instagram.png" alt="Instagram" /></a>
         </div>
-        <div class="sm-text">©2020LaslesVPN</div>
+        <div class="text--secondary m--auto-x">©2020LaslesVPN</div>
       </div>
-      <ul class="product">
-        <div class="md-text link">Product</div>
-        <li class="sm-text link">Download</li>
-        <li class="sm-text link">Pricing</li>
-        <li class="sm-text link">Locations</li>
-        <li class="sm-text link">Servers</li>
-        <li class="sm-text link">Countries</li>
-        <li class="sm-text link">Blog</li>
-      </ul>
-      <ul class="product">
-        <div class="md-text link">Engage</div>
-        <li class="sm-text link">LaslesVPN ?</li>
-        <li class="sm-text link">FAQ</li>
-        <li class="sm-text link">Tutorials</li>
-        <li class="sm-text link">About Us</li>
-        <li class="sm-text link">Privacy Policy</li>
-        <li class="sm-text link">Terms of Service</li>
-      </ul>
-      <ul class="product">
-        <div class="md-text link">Earn Money</div>
-        <li class="sm-text link">Affiliate</li>
-        <li class="sm-text link">Become Partner</li>
-      </ul>
+      <div id="help" class="footer__link-container">
+        <ul class="footer__link">
+          <div class="md-text link">Product</div>
+          <li class="text--secondary link">Download</li>
+          <li class="text--secondary link">Pricing</li>
+          <li class="text--secondary link">Locations</li>
+          <li class="text--secondary link">Servers</li>
+          <li class="text--secondary link">Countries</li>
+          <li class="text--secondary link">Blog</li>
+        </ul>
+        <ul class="footer__link">
+          <div class="md-text link">Engage</div>
+          <li class="text--secondary link">LaslesVPN ?</li>
+          <li class="text--secondary link">FAQ</li>
+          <li class="text--secondary link">Tutorials</li>
+          <li class="text--secondary link">About Us</li>
+          <li class="text--secondary link">Privacy Policy</li>
+          <li class="text--secondary link">Terms of Service</li>
+        </ul>
+        <ul class="footer__link">
+          <div class="md-text link">Earn Money</div>
+          <li class="text--secondary link">Affiliate</li>
+          <li class="text--secondary link">Become Partner</li>
+        </ul>
+      </div>
     </div>
-    <!-- footer end -->
+    <!-- Footer end -->
   </body>
 </html>

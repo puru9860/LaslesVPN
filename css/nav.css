@@ -1,29 +1,32 @@
-nav {
+.nav {
   display: flex;
   justify-content: space-between;
-  margin-left: 0;
   align-items: center;
-  padding: 3.125rem 0 5.805rem 0;
+  padding-top: 1.875rem;
+  background-color: #fff;
+  padding-bottom: 1.25rem;
+  z-index: 1000;
 }
 
-.logo {
-  display: flex;
+
+.menu {
+  display: none;
 }
 
-.nav-items {
-  display: flex;
-}
-
-.nav-item {
+.menu__item {
   padding: 0 0.625rem;
   margin: 0 0.625rem;
 }
 
-.nav-item:hover, .menu:hover {
+.menu__item a:hover {
   color: #F53838;
   cursor: pointer;
 }
 
-.menu {
-  color: #4F5665;
+.hamburger-menu img {
+  height: 30px;
+}
+
+.hamburger-menu:hover {
+  cursor: pointer;
 }
