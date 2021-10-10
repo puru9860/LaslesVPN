@@ -1,4 +1,4 @@
-@media (min-width:425px) {
+@media (min-width: 425px) {
   .container {
     padding-left: 3.125rem;
     padding-right: 3.125rem;
@@ -24,7 +24,6 @@
     margin: 0 auto;
   }
 
-
   /* Testimonials */
 
   .slider {
@@ -39,15 +38,15 @@
   }
 
   .slider__button {
-    height: 40px;
-    width: 40px;
+    height: 2.5rem;
+    width: 2.5rem;
     margin-right: 1.25rem;
     cursor: pointer;
   }
 
   .slider__left-arrow img {
-    height: 40px;
-    width: 40px;
+    height: 2.5rem;
+    width: 2.5rem;
   }
 
   .slider__right-arrow {
@@ -60,7 +59,6 @@
 }
 
 @media (min-width: 768px) {
-
   .container {
     padding-left: 3.75rem;
     padding-right: 3.75rem;
@@ -76,13 +74,11 @@
 
   .hero__content {
     padding: 1.875rem 0;
-    max-width: 555px;
   }
 
   .hero__button {
     margin-top: 1.25rem;
   }
-
 
   .stats__container {
     flex-direction: row;
@@ -101,9 +97,7 @@
     padding-left: 0;
     padding-right: 0;
     justify-content: center;
-
   }
-
 
   .features {
     display: flex;
@@ -121,27 +115,25 @@
     padding-top: 1.25rem;
   }
 
-
   .map__illustration {
-    min-height: 550px;
+    min-height: 34.375rem;
   }
 
   .sponsors__item {
-    height: 55px;
-    width: 156px;
+    height: 3.437rem;
+    width: 9.687rem;
     margin-bottom: 1.875rem;
-    margin-right: 1.25rem;
     padding: 5px;
   }
 
   .slider__button {
-    height: 50px;
-    width: 50px;
+    height: 3.125rem;
+    width: 3.125rem;
   }
 
   .slider__left-arrow img {
-    height: 50px;
-    width: 50px;
+    height: 3.125rem;
+    width: 3.125rem;
   }
 
   .subscribe {
@@ -160,8 +152,7 @@
   }
 }
 
-@media(min-width: 1024px) {
-
+@media (min-width: 1024px) {
   .container {
     padding-left: 4.375rem;
     padding-right: 4.375rem;
@@ -180,7 +171,6 @@
   .menu {
     display: flex;
     align-items: center;
-
   }
 
   .hamburger-menu {
@@ -190,8 +180,12 @@
   /* Hero section */
 
   .hero__container {
-    padding-top: 150px;
+    padding-top: 9.375rem;
     flex-direction: row;
+  }
+
+  .hero__content {
+    min-width: 50%;
   }
 
   .hero__title {
@@ -206,13 +200,30 @@
     margin-bottom: 1.875rem;
   }
 
+  /* Features */
+
+  .features {
+    padding-top: 6.25rem;
+  }
+
+  .features__content {
+    min-width: 40%;
+  }
   /* Pricing */
+
+  .pricing__container {
+    padding-top: 5rem;
+  }
+
+  .pricing__item {
+    min-width: 25%;
+    width: 330px;
+  }
 
   .pricing__plan-title,
   .pricing__price {
     margin-bottom: 1.875rem;
   }
-
 
   .subscribe__heading {
     max-width: 500px;
@@ -220,7 +231,12 @@
     line-height: 45px;
   }
 
+  .sponsors {
+    justify-content: space-between;
+  }
+
   /* Footer */
+
   .footer {
     flex-direction: row;
     justify-content: space-between;
@@ -244,7 +260,15 @@
     max-width: 340px;
     text-align: left;
   }
-
 }
 
-@media(min-width: 1440px) {}
+@media (min-width: 1440px) {
+  html {
+    font-size: 18px;
+  }
+
+  .container {
+    padding-left: 8.75rem;
+    padding-right: 8.75rem;
+  }
+}
