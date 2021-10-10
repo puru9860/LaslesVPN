@@ -40,7 +40,7 @@ html {
   cursor: pointer;
 }
 
-.btn--primary {
+.btn-primary {
   height: 60px;
   width: 250px;
 
@@ -49,13 +49,13 @@ html {
   line-height: 25px;
 }
 
-.btn--primary:hover {
+.btn-primary:hover {
   color: #ffffff;
   background-color: #0b132a;
   box-shadow: 0 15px 50px -10px #0d1325;
 }
 
-.btn--secondary {
+.btn-secondary {
   border: 1px solid #f53855;
   border-radius: 50px;
   color: #f53855;
@@ -64,43 +64,43 @@ html {
   line-height: 19px;
 }
 
-.btn--secondary:hover {
+.btn-secondary:hover {
   color: #ffffff;
   background-color: #f53838;
 }
 
 /* text start */
 
-.text--primary {
+.text-primary {
   color: #0b132a;
 }
 
-.text--secondary {
+.text-secondary {
   color: #4f5665;
 }
 
-.text--bold {
+.text-bold {
   font-weight: 700;
 }
 
-.text--semi-bold {
+.text-semi-bold {
   font-weight: 500;
 }
 
-.text--md {
+.text-md {
   font-size: 20px;
 }
 
-.text--semi-lg {
+.text-semi-lg {
   font-size: 25px;
 }
 
-.text--lg {
+.text-lg {
   font-size: 35px;
   line-height: 50px;
 }
 
-.text--center {
+.text-center {
   text-align: center;
 }
 
@@ -120,17 +120,17 @@ html {
 
 /* margin */
 
-.m--auto-x {
+.m-auto-x {
   margin: 0 auto;
 }
 
 /* heading */
 
-.heading--main {
+.heading-main {
   margin-bottom: 1.25rem;
 }
 
-.heading--sub {
+.heading-sub {
   margin-bottom: 3.125rem;
   max-width: 34.687rem;
 }
